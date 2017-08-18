@@ -1,0 +1,60 @@
+<form class="form-horizontal" role="form" autocomplete="on">
+	<div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12">
+		<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+			<input class="form-control" type="text" name="title" autofocus="true" placeholder=" Title" required="true"/>
+		</div>
+		<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+			<input class="form-control" type="text" name="tag" placeholder=" Tag" required="true"/>
+		</div>
+	</div>
+	<div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12">
+		<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+			<input class="form-control" type="text" name="director" autofocus="true" placeholder=" Director" required="true"/>
+		</div>
+		<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+			<input class="form-control" type="text" name="actor" placeholder=" Actor" required="true"/>
+		</div>
+	</div>
+	<div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12">
+		<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+			<select class="form-control" name="language" required="true">
+				<option> Language </option>
+				{% for key in key.language|keys %}
+					<option> {{ key }} </option>
+				{% endfor %}
+			</select>
+		</div>
+		<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+			<input class="form-control" type="date" name="onlinetime" placeholder=" Onlinetime" required="true"/>
+		</div>
+	</div>
+	<div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12">
+		<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+			<select class="form-control" name="types" required="true">
+				<option> Type </option>
+				{% for key in key.type|keys %}
+					<option> {{ key }} </option>
+				{% endfor %}
+			</select>
+		</div>
+		<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 link">
+			<div class="input-group">
+				<input class="form-control" type="url" name="link" placeholder=" Link" required="true"/>
+				<span class="input-group-btn">
+					<button onclick="checkLink('video')" class="btn btn-yige" type="button">Check</button>
+				</span>
+			</div>
+		</div>
+	</div>
+	<div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12">
+		<input id="file-video" type="file" name="file[]" class="file file-loading" accept="image/*" placeholder=" Cover Picture" required="true"/>
+	</div>
+	<div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12">
+		<textarea class="simplemde" name="introduce" placeholder=" Introduce..." required="true"></textarea>
+	</div>
+	<div class="form-button btn-group form-group col-xs-12 col-sm-12 col-md-12 col-lg-12">
+		<input type="hidden" name="type" value="4">
+		<button type="button" class="submit btn btn-lg btn-yige"> submit </button>
+		<button type="reset" data-type = 'video' class="btn btn-lg btn-default"> Reset </button>
+	</div>
+</form>

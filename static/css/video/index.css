@@ -1,0 +1,64 @@
+.content
+{
+	margin-top: 5em;
+	background: #fff;
+	border-radius: 0.5em;
+	padding: 0.5em 0.5em 2.5em 0.5em;
+    background: rgba(0, 0, 0, 0);
+}
+
+.contents
+{
+	position: relative;
+	top: 2em;
+	margin: 0;
+	padding: 1em;
+	display: flex;
+	flex-wrap: wrap;
+    justify-content: flex-start;
+    background: rgba(0, 0, 0, 0);
+}
+
+.metros
+{
+	padding: 1em;
+}
+
+.metro
+{
+	border-radius: 0.5em;
+	box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+	padding: 0.5em 0.5em 0 0.5em;
+	margin: 0;
+	overflow: hidden;
+	position: relative;
+	background: #fff;
+}
+
+.metro video
+{
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+.metro h5
+{
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	margin: 0;
+	padding: 1em;
+	color: #999;
+	font-size: 1.5em;
+}
+
+.metro h5 i
+{
+	cursor: pointer;
+	float: right;
+	color: #ff82ab;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);	
+}

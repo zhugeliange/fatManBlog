@@ -1,0 +1,191 @@
+body
+{
+	overflow-x: hidden;
+}
+
+.login
+{
+  width: 100%;
+	background: #fff;
+	padding:8%; 
+  margin-top: 7em;
+  border-radius: 1em;
+  box-shadow: 0px 0px 1px 5px rgba(0, 0, 0, 0.01);
+}
+
+.login h1
+{
+	margin-top: 0px;
+	margin-bottom: 24%;
+}
+
+.login input
+{
+	margin: 8% 0;
+  font-weight: bolder;
+}
+
+.login input[type=text], .register input[type=text], .login input[type=password], .register input[type=password]
+{
+  font-size: 1.5em;
+}
+
+.login .submit
+{
+	float: none;
+  display: block;
+	margin:24% auto 8% auto;
+}
+
+.login .forget
+{
+	width: auto;
+ 	display: table;
+ 	margin:0 auto;
+}
+
+.login span
+{
+	width: 100px;
+}
+
+.change
+{
+  display: block;
+  width: 8.5em;
+  height: 8.5em;
+  background: #fff;
+  overflow: hidden;
+  float: right;
+	position: absolute;
+	top: 5em;
+	right: -10%;
+  border-radius: 4.5em;
+  z-index: 999;
+  box-shadow: 1px 1px 1px #ff82ab;
+}
+
+.change i
+{
+  color: #ff82ab;
+  text-shadow: 1px 1px 1px #ff82ab;
+}
+
+.register
+{
+  width: 100%;
+  background: #ff82ab;
+  padding:8%; 
+  border-radius: 1em;
+  box-shadow: 0px 0px 1px 5px rgba(0, 0, 0, 0.01);
+  position: absolute;
+  margin: 7em auto 0 auto;
+}
+
+.register h1
+{
+  margin-top: 0px;
+  margin-bottom: 10%;
+  color: #fff;
+}
+
+.register input
+{
+  margin: 8% 0;
+  font-weight: bolder;
+  color: #fff;
+}
+
+.register .submit
+{
+  float: none;
+  display: block;
+  margin: 15% auto 5% auto;
+}
+
+.register > .form-horizontal > .form-group > img
+{
+  width: 50%;
+  float: none;
+  display: block;
+  margin:0 auto;
+  padding: 0;
+  border-radius: 50%;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  background: #ff82ab;
+  border: 0.35em solid #fff;
+  cursor: pointer;
+}
+
+.animation_rotate
+{
+  -webkit-animation: rotate 1s ease-in-out forwards;
+}
+
+.animation_rotates
+{
+  -webkit-animation: rotates 1s ease-in-out forwards;
+}
+
+@-webkit-keyframes rotate 
+{
+    100% {-webkit-transform: rotate(405deg) scale(0.5, 0.5);right: -2em;top: 5.5em;}
+}
+
+@-webkit-keyframes rotates
+{
+    0% {-webkit-transform: rotate(405deg) scale(0.5, 0.5);right: -2em;top: 5.5em;}
+    100%{ -webkit-transform: rotate(-360deg) scale(1, 1);}
+}
+
+header, .search-bar, .footer
+{
+  display: none;
+}
+
+.login .form-group, .register .form-group
+{
+  padding: 0;
+  margin: 0;
+}
+
+.login span
+{
+  height: auto;
+  width: auto;
+}
+
+.glyphicon
+{
+  height: auto;
+  top: 22.5%;
+  font-size: 1.5em;
+}
+
+.form-horizontal .has-feedback .form-control-feedback
+{
+  right: 1.5%;
+}
+
+.alert
+{
+  padding: 0.25em 2em 0.25em 1em;
+  margin: -5% 0 0 0;
+}
+
+.alert span
+{
+  font-weight: bolder;
+  color: #fff;
+}
+
+.alert button
+{
+  margin-top: 0.1em;
+}
+
+.form-horizontal .form-control
+{
+  padding-right: 2em;
+}
+

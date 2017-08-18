@@ -1,0 +1,113 @@
+.content-title > div
+{
+	text-align: right;
+	margin: 0;
+	padding: 1.5px 15px 1.5px 0;
+	background: #fff;
+}
+
+.content-title > div > .hidden-sm
+{
+	width: 3em;
+	margin: 0;
+	padding: 0;
+}
+
+.content-title > div > .hidden-sm > button
+{
+	width: 3em;
+	height: 3em;
+	margin: 0;
+	padding: 0;
+}
+
+.content-title > div > .hidden-xs > button
+{
+	width: 8em;
+	height: 3em;
+	margin: 0;
+}
+
+.content-title > div > .btn-group-vertical > button:nth-of-type(2)
+{
+	position: absolute;
+	top: 3em;
+	right: 0;
+	z-index: 999;
+}
+
+.content-title > div > .btn-group-vertical > button:nth-of-type(3)
+{
+	position: absolute;
+	top: 6em;
+	right: 0;
+	z-index: 999;
+}
+
+.content-title > div > .btn-group-vertical > button:nth-of-type(4)
+{
+	position: absolute;
+	top: 9em;
+	right: 0;
+	z-index: 999;
+}
+
+
+.breadcrumb
+{
+	background: #fff;
+	margin: 0;
+	font-size: 1.1em;
+}
+
+.breadcrumbs
+{
+	text-align: right;
+	padding: 8px 15px;
+	margin: 0;
+	list-style: none;
+	background-color: #fff;
+	border-radius: 3px;
+	font-size: 1.1em;
+}
+
+.breadcrumbs > li:not(.active)
+{
+	color: #2196f3;
+    text-decoration: none;
+    transition: all 0.2s;
+    background-color: transparent;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.breadcrumbs i
+{
+	margin-left: 0.25em;
+	font-size: 1em;
+}
+
+.breadcrumbs > li + li:before {
+  content: "|";
+  padding: 0 5px;
+  color: #cccccc;
+}
+
+.breadcrumbs > li {
+  display: inline-block;
+}
+
+.breadcrumbs > .active {
+  color: #bbbbbb;
+}
+
+hr
+{
+	width: 100%;
+	height: 1px;
+	position: relative;
+	top: 0.25em;
+	margin: 0;
+	color: #999;
+}
+

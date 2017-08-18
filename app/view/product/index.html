@@ -1,0 +1,117 @@
+{% extends "layout.html" %}
+{% block content%}
+	<div class="content col-xs-12 col-sm-12 col-md-12 col-lg-12">
+		<div class="content-left hidden-xs hidden-sm col-md-2 col-lg-2">
+			<a href="#"><i class="fa fa-5x fa-chevron-circle-left click-forbid" data-action="prev"></i></a>
+		</div>
+		<div class="content-center col-xs-12 col-sm-12 col-md-8 col-lg-8">
+			<div class="product-title">
+				<ol class="breadcrumb hidden-xs">
+					{% for key, value in breadcrumb %}
+						{% if loop.revindex == 1 %}
+						<li class="active">{{ key }}</li>
+						{% else %}
+						<li><a href="{{value}}">{{ key }}</a></li>
+						{% endif %}
+					{% endfor %}
+				</ol>
+				<h4 class="col-xs-12 col-sm-6 col-md-6 col-lg-7"> {{ product.title }} </h4>
+				<p class="hidden-xs">{{ product.createtime }}</p>
+			</div>
+			<div class="content-product col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<div class="product-add col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<div class="product-add-left col-xs-12 col-sm-12 col-md-6 col-lg-6">
+						{% for value in product.tag %}
+							<span class="label-yige"> {{ value }} </span>
+						{% endfor %}
+					</div>
+					<div class="product-add-right hidden-xs hidden-sm col-md-6 col-lg-6">
+						<span><a href="#"><i class="action fa fa-commenting-o" data-action='0'></i></a><p class="hidden-md">{{ product.commentnumber }}</p></span>
+						<span><a href="#"><i class="action fa fa-heart-o" data-action='2'></i></a><p class="hidden-md">{{ product.collectnumber }}</p></span>
+						<span><a href="#"><i class="action fa fa-send-o" data-action='1'></i></a><p class="hidden-md">{{ product.sharenumber }}</p></span>
+						<span><a href="#"><i class="action fa fa-thumbs-o-up" data-action='3'></i></a><p class="hidden-md">{{ product.praisenumber }}</p></span>
+						<span><a href="#"><i class="action fa fa-thumbs-o-down" data-action='4'></i></a><p class="hidden-md">{{ product.knocknumber }}</p></span>
+					</div>
+				</div>
+				<p class="product-content">
+					{% autoescape false %}
+                    	{{ product.content }}
+                    {% endautoescape %}
+				</p>
+				<div class="product-info col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<div class="product-info-left col-xs-4 col-sm-3 col-md-2 col-lg-2">
+						<img class="{% if product.user.sex == 2 %}head-female{% else %}head-male{% endif %}" src="{{ product.user.headlink }}" alt="{{ product.user.username }}" data-userid="{{ product.user.userid }}">
+					</div>
+					<p class="product-info-right product-info-rights">
+						{{ product.user.introduce }}
+					</p>
+				</div>
+			</div>
+			<div class="product-comments col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			{% if product.comment is defined %}
+				{% for value in product.comment %}
+					<div class="product-comment col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<div class="product-comment-head col-xs-2 col-sm-1 col-md-1 col-lg-1">
+							<img class="{% if value.user.sex == 2 %}head-female{% else %}head-male{% endif %}" src="{{ value.user.headlink }}" alt="{{ value.user.username }}" data-userid="{{ value.user.userid }}">
+						</div>
+						<div class="product-comment-content col-xs-10 col-sm-11 col-md-11 col-lg-11">
+							<p class="product-comment-contents">
+								{{ value.content }}
+							</p>
+						</div>
+					</div>
+					{% if value.alt is defined %}
+						{% for v in value.alt %}
+							<div class="product-comment col-xs-12 col-sm-12 col-md-12 col-lg-12">
+								<div class="col-xs-2 col-sm-1 col-md-1 col-lg-1">
+								</div>
+								<div class="product-comment-head col-xs-2 col-sm-1 col-md-1 col-lg-1">
+									{% if v.touser is defined %}
+										<img class="product-comment-head-left {% if v.user.sex == 2 %}head-female{% else %}head-male{% endif %}" src="{{ v.user.headlink }}" alt="{{ v.user.username }}" data-userid="{{ v.user.userid }}">
+										<img class="product-comment-head-right {% if v.touser.sex == 2 %}head-female{% else %}head-male{% endif %}" src="{{ v.touser.headlink }}" alt="{{ v.touser.username }}" data-userid="{{ v.touser.userid }}">
+									{% else %}
+										<img class="{% if v.user.sex == 2 %}head-female{% else %}head-male{% endif %}" src="{{ v.user.headlink }}" alt="{{ v.user.username }}" data-userid="{{ v.user.userid }}">
+									{% endif %}
+								</div>
+								<div class="product-comment-content col-xs-8 col-sm-9 col-md-9 col-lg-9">
+									<p class="product-comment-contents">
+										{{ v.content }}
+									</p>
+								</div>
+							</div>
+						{% endfor %}
+					{% endif %}
+					<hr/>
+				{% endfor %}
+			{% endif %}
+			</div>
+			<div class="product-adds col-xs-12 col-sm-12 hidden-md hidden-lg">
+				<div class="col-xs-1 col-sm-3">
+				</div>
+				<div class="product-adds-center col-xs-10 col-sm-6">
+					<span><a href="#"><i class="action fa fa-commenting-o"></i></a></span>
+					<span><a href="#"><i class="action fa fa-heart-o"></i></a></span>
+					<span><a href="#"><i class="action fa fa-send-o"></i></a></span>
+					<span><a href="#"><i class="action fa fa-thumbs-o-up"></i></a></span>
+					<span><a href="#"><i class="action fa fa-thumbs-o-down"></i></a></span>
+				</div>
+				<div class="col-xs-1 col-sm-3">
+				</div>
+			</div>
+			<div class="comment-adds col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<div class="hidden-xs col-sm-1 col-md-2 col-lg-3">
+				</div>
+				<div class="comment-adds-center col-xs-12 col-sm-10 col-md-8 col-lg-6">
+					<span class="comment-adds-center-cancel"><i class="fa fa-close"></i></span>
+					<div class="comment-adds-center-content" contenteditable="true"></div>
+					<span class="comment-adds-center-submit"><i class="fa fa-check"></i></span>
+				</div>
+				<div class="hidden-xs col-sm-1 col-md-2 col-lg-3">
+				</div>
+			</div>
+		</div>
+		<div class="content-right hidden-xs hidden-sm col-md-2 col-lg-2">
+			<a href="#"><i class="fa fa-5x fa-chevron-circle-right click-forbid" data-action="next" data-isclick="false"></i></a>
+		</div>
+	</div>
+{% endblock %}

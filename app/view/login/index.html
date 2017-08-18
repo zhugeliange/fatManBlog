@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+{% block content %}
+	<div class="background  col-xs-9 col-sm-6 col-md-4 col-lg-3 horizontal-center">
+	<div class="login">
+		<h1> Login </h1>
+		<form class="form-horizontal" role="form" autocomplete="on">
+			<div class="form-group">
+				<input class="form-control" type="text" name="username" placeholder=" Username">
+			</div>
+			<div class="form-group">
+				<input class="form-control" type="password" name="password" placeholder=" Password">
+			</div>
+			<button type="button" class="btn btn-lg btn-yige submit"> Login </button>
+		</form>
+		<a class="forget" href="#"> Forget ? </a>
+	</div>
+	<div class="register">
+		<h1> Register </h1>
+		<form id="headForm" class="form-horizontal" role="form" autocomplete="on">
+			<div class="form-group">
+				<input name="token" type="hidden" value="">
+				<input name="headhash" type="hidden" value="">
+				<img src="{{ static }}image/add.png"/>
+				<input class="form-control hidden" type="file" name="file">
+			</div>
+		</form>
+		<form id="registerForm" class="form-horizontal" role="form" autocomplete="on">
+			<div class="form-group">
+				<input class="form-control" type="text" name="username" placeholder=" Username">
+			</div>
+			<div class="form-group">
+				<input class="form-control" type="password" name="password" placeholder=" Password">
+			</div>
+			<div class="form-group">
+				<input class="form-control" type="password" name="rePassword" placeholder=" Repassword">
+			</div>
+			<button type="button" class="btn btn-lg btn-default submit"> Register </button>
+		</form>
+	</div>
+	<a class="change" href="javascript:void(0);"><i class="fa fa-plus-circle fa-10x horizontal-center vertical-center"></i></a>
+	</div>
+{% endblock %}

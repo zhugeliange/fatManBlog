@@ -1,0 +1,16 @@
+{
+	"name":"fsociety",
+	"description":"fsociety",
+	"type":"framework",
+	"keywords":["fsociety"],
+	"require":{
+		"php":">=5.3.0",
+		"filp/whoops":"*",
+		"symfony/var-dumper":"*",
+		"catfan/medoo":"*",
+		"twig/twig":"*",
+		"kartik-v/bootstrap-fileinput": "*",
+		"qiniu/php-sdk":"*",
+		"michelf/php-markdown":"*"
+	}
+}

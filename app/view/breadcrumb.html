@@ -1,0 +1,49 @@
+<div class="content-title col-xs-12 col-sm-12 col-md-12 col-lg-12">
+	<ol class="breadcrumb col-xs-10 col-sm-10 col-md-6 col-lg-6">
+		{% for key, value in breadcrumb %}
+			{% if loop.revindex == 1 %}
+				<li class="active">{{ key }}</li>
+			{% else %}
+				<li><a href="{{value}}">{{ key }}</a></li>
+			{% endif %}
+		{% endfor %}
+	</ol>
+	<ol class="breadcrumbs hidden-xs hidden-sm col-md-6 col-lg-6">
+		{% for key, value in key.sort %}
+			{% if key | first != '!' %}
+				{% if loop.index == 1 %}
+					<li class="active" data-sort="{{ key }}">{{ key | title }}</li>
+				{% else %}
+					<li data-sort="{{ key }}">{{ key | title }}<i class="fa fa-long-arrow-down"></i></li>
+				{% endif %}
+			{% endif %}
+		{% endfor %}
+	</ol>
+	<div class="col-xs-2 col-sm-2 hidden-md hidden-lg">
+		<div class="btn-group-vertical hidden-xs" role="group">
+			{% for key, value in key.sort %}
+				{% if key | first != '!' %}
+					{% if loop.index == 1 %}
+						<button type="button" class="btn btn-yige" data-sort="{{ key }}">{{ key | title }}</button>
+						<button type="button" class="btn btn-default" data-sort="{{ key }}">{{ key | title }}</button>
+					{% else %}
+						<button type="button" class="btn btn-default" data-sort="{{ key }}">{{ key | title }}</button>
+					{% endif %}
+				{% endif %}
+			{% endfor %}
+		</div>
+		<div class="btn-group-vertical hidden-sm" role="group">
+			{% for key, value in key.sort %}
+				{% if key | first != '!' %}
+					{% if loop.index == 1 %}
+						<button type="button" class="btn btn-yige" data-sort="{{ key }}"><i class="fa fa-{{ key }}"></i></button>
+						<button type="button" class="btn btn-default" data-sort="{{ key }}"><i class="fa fa-{{ key }}"></i></button>
+					{% else %}
+						<button type="button" class="btn btn-default" data-sort="{{ key }}"><i class="fa fa-{{ key }}"></i></button>
+					{% endif %}
+				{% endif %}
+			{% endfor %}
+		</div>
+	</div>
+</div>
+<hr/>

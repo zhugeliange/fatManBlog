@@ -1,0 +1,81 @@
+.content
+{
+	margin-top: 5em;
+	background: #fff;
+	border-radius: 0.5em;
+	padding: 0.5em;
+    background: rgba(0, 0, 0, 0);
+}
+
+.contents
+{
+	position: relative;
+	top: 2em;
+	margin: 0;
+	padding: 1em;
+	display: flex;
+	flex-wrap: wrap;
+    justify-content: flex-start;
+    background: rgba(0, 0, 0, 0);
+}
+
+.contents .thumbnail
+{
+	position: relative;
+	padding: 0;
+	border-radius: 50% 50% 0.5em 0.5em;
+	box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);	
+	background: #fff;
+}
+
+.contents .thumbnail a
+{
+	position: relative;
+	display: block;
+}
+
+.contents .thumbnail img
+{
+	border-radius: 50%;
+	border: 2.5px #ff82ab solid;
+	box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);	
+}
+
+.thumbnail .caption
+{
+	position: relative;
+	padding: 1em;
+}
+
+.thumbnail a i
+{
+	color: #ff82ab;
+	position: absolute;
+	top: 49%;
+	left: 52.5%;
+  	transform: translate(-50%, -50%);
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.thumbnail .caption h5
+{
+	margin: 0;
+	padding: 0 0.5em;
+	color: #999;
+	font-size: 1.5em;
+}
+
+.thumbnail .caption h5 i
+{
+	cursor: pointer;
+	float: right;
+	color: #ff82ab;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);	
+}
+
+.thumbnail .caption p
+{
+	margin: 0;
+	padding: 0;
+	color: #999;
+}

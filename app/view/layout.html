@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta content="text/html; charset=utf8;">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title> {{ control | title }} </title>
+	<link rel="stylesheet" type="text/css" href="{{statics}}css/common/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="{{statics}}css/common/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="{{statics}}css/common/jplayer.css">
+	<link rel="stylesheet" type="text/css" href="{{statics}}css/common/common.css">
+	<link rel="stylesheet" type="text/css" href="{{statics}}css/common/simplemde.css">
+	<link rel="stylesheet" type="text/css" href="{{statics}}css/common/fileinput.css">
+	<link rel="stylesheet" type="text/css" href="{{css}}">
+	{% if control == 'articel' or control == 'picture' or control == 'music' or control == 'video' %}
+		<link rel="stylesheet" type="text/css" href="{{statics}}css/common/breadcrumb.css">
+	{% endif %}
+</head>
+<body class="container-fluid">
+	<header>
+		<div class="menu col-xs-12 col-sm-12 col-md-12 col-lg-12 btn-group btn-group-justified">
+			{% for index, value in navbar %}
+				{% if loop.index == 1 %}
+					<div id="logo" class="btn-group col-xs-12 col-sm-2 col-md-2 col-lg-2">
+						<button type="button" class="btn btn-lg btn-yige hidden-xs col-sm-12 col-md-12 col-lg-12">
+							Logo
+						</button>
+						<button type="button" class="btn btn-lg btn-yige col-xs-12 hidden-sm hidden-md hidden-lg">
+							<i class="fa {{ value.0 }} col-xs-2"></i>
+							Logo
+							<i class="fa {{ value.1 }} col-xs-2"></i>
+						</button>
+					</div>
+				{% else %}
+					<div class="btn-group hidden-xs col-sm-2 col-md-2 col-lg-2">
+						<button type="button" data-herf="{{ index }}" class="btn btn-lg btn-yige hidden-xs hidden-sm"> {{ index }} </button>
+						<button type="button" data-herf="{{ index }}" class="btn btn-lg btn-yige hidden-xs hidden-md hidden-lg"> 
+							<i class="fa {{ value }}"></i>
+						</button>
+					</div>
+				{% endif %}
+			{% endfor %}
+		</div>
+	</header>
+	<content>
+		{% block content %}{% endblock %}
+		<div id="message" class="hidden">
+			<div class="message-content col-xs-8 col-sm-4 col-md-3 col-lg-2">
+				<div class="message-header hidden">header</div>
+				<hr class="hidden" />
+				<div class="message-body">message</div>
+				<hr class="hidden"/>
+				<div class="message-footer hidden">
+					<button type="button" class="btn btn-yige hidden"> yes </button>
+					<button type="button" class="btn btn-default hidden"> no </button>
+				</div>
+				<i class="fa fa-close"></i>
+			</div>
+		</div>
+	</content>
+	<footer>
+		<i class="fa fa-plus-circle fa-10x search-bar hidden-sm hidden-md hidden-lg"></i>
+		<div class="footer col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center"><p>Copyright © 2013-2016  runoob.com All Rights Reserved. 备案号：闽ICP备15012807号-1</p></div>
+		<script type="text/javascript" src="{{statics}}js/common/jquery.js"></script>
+		<script type="text/javascript" src="{{statics}}js/common/cookie.js"></script>
+		<script type="text/javascript" src="{{statics}}js/common/bootstrap.js"></script>
+		<script type="text/javascript" src="{{statics}}js/common/svg.js"></script>
+		<script type="text/javascript" src="{{statics}}js/common/jplayer.js"></script>
+		<script type="text/javascript" src="{{statics}}js/common/lrc.js"></script>
+		<script type="text/javascript" src="{{statics}}js/common/simplemde.js"></script>
+		<script type="text/javascript" src="{{statics}}js/common/fileinput/canvas-to-blob.js"></script>
+		<script type="text/javascript" src="{{statics}}js/common/fileinput/sortable.js"></script>
+		<script type="text/javascript" src="{{statics}}js/common/fileinput/purify.js"></script>
+		<script type="text/javascript" src="{{statics}}js/common/fileinput/fileinput.js"></script>
+		<script type="text/javascript" src="{{statics}}js/common/common.js"></script>
+		<script type="text/javascript" src="{{js}}"></script>
+	</footer>
+</body>
+</html>

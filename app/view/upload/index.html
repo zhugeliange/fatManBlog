@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+{% block content%}
+	<div class="hidden-xs col-sm-1 col-md-2 col-lg-3">
+	</div>
+	<div class="content col-xs-12 col-sm-10 col-md-8 col-lg-6">
+		<!-- Nav tabs -->
+		<ul class="nav nav-tabs" role="tablist">
+			<li role="presentation" class="active"><a href="#articel" role="tab" data-toggle="tab">articel</a></li>
+			<li role="presentation"><a href="#picture" role="tab" data-toggle="tab">picture</a></li>
+			<li role="presentation"><a href="#music" role="tab" data-toggle="tab">music</a></li>
+			<li role="presentation"><a href="#video" role="tab" data-toggle="tab">video</a></li>
+		</ul>
+
+		<!-- Tab panes -->
+		<div class="tab-content">
+			<div role="tabpanel" class="tab-pane fade in active" id="articel">
+				{% include "upload/articel.html" %}
+			</div>
+			<div role="tabpanel" class="tab-pane fade" id="picture">
+				{% include "upload/picture.html" %}
+			</div>
+			<div role="tabpanel" class="tab-pane fade" id="music">
+				{% include "upload/music.html" %}
+			</div>
+			<div role="tabpanel" class="tab-pane fade" id="video">
+				{% include "upload/video.html" %}
+			</div>
+		</div>
+	</div>
+	<div class="hidden-xs col-sm-1 col-md-2 col-lg-3">
+	</div>
+{% endblock %}

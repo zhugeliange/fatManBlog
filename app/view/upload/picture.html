@@ -1,0 +1,21 @@
+<form class="form-horizontal" role="form" autocomplete="on">
+	<div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12">
+		<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+			<input class="form-control" type="text" name="title" placeholder=" Title">
+		</div>
+		<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+			<input class="form-control" type="text" name="tag" placeholder=" Tag" />
+		</div>
+	</div>
+	<div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12">
+		<input id="file-picture" type="file" name="file[]" class="file file-loading" multiple accept="image/*" placeholder=" Picture" required="true"/>
+	</div>
+	<div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12">
+		<textarea class="simplemde" name="introduce" placeholder=" Introduce..." required="true"></textarea>
+	</div>
+	<div class="form-button btn-group form-group col-xs-12 col-sm-12 col-md-12 col-lg-12">
+		<input type="hidden" name="type" value="2">
+		<button type="button" class="submit btn btn-lg btn-yige"> Submit </button>
+		<button type="reset" data-type = 'picture' class="btn btn-lg btn-default"> Reset </button>
+	</div>
+</form>

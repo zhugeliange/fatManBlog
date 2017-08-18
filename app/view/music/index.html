@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+{% block content%}
+	<div class="content col-xs-12 col-sm-12 col-md-12 col-lg-12">
+		{% include "breadcrumb.html" %}
+		<div class="contents col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			{% for value in product %}
+				<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+					<div class="thumbnail">
+						<a href="#">
+							<img src="{{ value.coverlink }}" alt="{{ value.title }}">
+							<i class="fa fa-5x fa-play"></i>
+						</a>
+						<div class="caption">
+							<h5>{{ value.title }}<i class="fa fa-bullseye" data-herf="{{ value.musicid }}"></i></h5>
+							<p></p>
+						</div>
+					</div>
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+{% endblock %}

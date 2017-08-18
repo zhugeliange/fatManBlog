@@ -1,0 +1,317 @@
+.background-image
+{
+	padding: 0;
+	margin: 0;
+	background: url(../../image/background.jpg);
+	background-size:100% auto;
+    background-repeat:no-repeat;
+}
+
+.container-fluid
+{
+  padding: 0;
+  margin: 0;
+}
+
+.content, .content-centers, .content-center, .content-left, .content-right, .metro
+{
+	padding: 0;
+}
+
+.content-centers
+{
+	background: #fff;
+	box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+	border-bottom-left-radius: 0.5em;
+	border-bottom-right-radius: 0.5em;
+}
+
+.user-head
+{
+	padding: 0;
+	border-radius: 1em;
+	box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+.image-add
+{
+	margin-bottom: 1em;
+	padding: 0;
+	background: rgba(9, 9, 9, 0.1);
+	border-bottom-left-radius: 1em;
+	border-bottom-right-radius: 1em;
+	border-style: dotted;
+	border: 0.1px;
+	overflow: hidden;
+}
+
+.image-add > div
+{
+	margin: 0;
+	padding: 0;   
+	text-align: center;
+}
+
+.user-follow
+{
+	margin: 0;
+	padding: 0;
+	color: #ff82ab;
+	text-align: center;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.user-name
+{
+	margin-bottom: 1em;
+	text-align: center;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.user-name > h3
+{
+	display: inline;
+}
+
+.user-name > i
+{
+	position: relative;
+	left: 0;
+	color: green;
+}
+
+.user-introduce
+{
+	padding: 0 1em;
+	color: #999;
+	text-overflow: visible;
+	word-wrap: break-word;
+	word-break: break-all;
+	margin-bottom: 1em;
+}
+
+.user-socializing
+{
+	padding: 0 1em;
+	display: flex;
+    justify-content: space-around;
+	margin-bottom: 1em;
+	overflow: hidden;
+}
+
+.user-socializing i
+{
+	color: #ff82ab;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.user-information
+{
+	list-style: none;
+	overflow: hidden;
+	padding: 0 1em;
+}
+
+.user-information i
+{
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+	margin: 0.5em;
+	min-width: 5%;
+}
+
+.user-information p
+{
+	display: inline;
+	font-weight: bold;
+	margin-left: 1em;
+	overflow: hidden;
+	text-overflow: visible;
+	word-wrap: break-word;
+	word-break: break-all;
+	color: #999;
+}
+
+.metro
+{
+	margin: 0.5em 0;
+	padding: 1em 2em;
+}
+
+.content-center div:first-child
+{
+	margin-top: 0;
+}
+
+.content-center div:last-child
+{
+	margin-bottom: 0;
+}
+
+.metro-bar
+{
+	width: 100%;
+	text-align: right;
+}
+
+.metro-bar h4
+{
+	margin: 0;
+	float: left;
+	display: inline-block;
+	position: relative;
+	bottom: 0;
+	font-weight: bolder;
+}
+
+.metro-bar span
+{
+	margin: 0 0.5em;
+	display: inline-block;
+	position: relative;
+	bottom: 0;
+}
+
+.metro-bar p
+{
+	margin: 0 0 0 1em;
+	padding: 0;
+	display: inline-block;
+	font-weight: bold;
+	color: #999;
+	position: relative;
+	bottom: 0;
+}
+
+.metro-bottom
+{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	padding: 0;
+	vertical-align: bottom;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.metro-content
+{
+	width: 100%;
+	overflow-x: hidden;
+	text-overflow: visible;
+	word-wrap: break-word;
+	word-break: break-all;
+	color: #999;
+	margin: 1em 0;
+} 
+
+.metro-bottom i
+{
+	font-size: 1.5em;
+	margin: 0 1em;
+}
+
+.metro-bottom i:last-child
+{
+	margin-right: 0;
+}
+
+.metro img
+{
+	border-radius: 0.5em;
+	width: 30%;
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+}
+
+.metro .metros
+{
+	width: 70%;
+	display: inline-block;
+	margin: 0;
+	padding: 0 0 0 1.5em;
+}
+
+.block-head
+{
+	margin: 0 0 1em 0;
+	padding: 0 2em;
+}
+
+.user-heads
+{
+	float: none;
+  	display: block;
+	margin:0 auto;
+	padding: 0;
+}
+
+.user-heads img
+{
+	width: 100%;
+	border-radius: 1em;
+	box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+.image-adds
+{
+	margin-bottom: 1em;
+	padding: 0;
+	background: rgba(9, 9, 9, 0.1);
+	border-bottom-left-radius: 1em;
+	border-bottom-right-radius: 1em;
+	border-style: dotted;
+	border: 0.1px;
+	overflow: hidden;
+}
+
+.image-adds > div
+{
+	margin: 0;
+	padding: 0;   
+	text-align: center;
+}
+
+.user-follows
+{
+	margin: 0;
+	padding: 0;
+	color: #ff82ab;
+	text-align: center;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.user-info
+{
+	width: 100%;
+	margin: 1em 0;
+	padding: 0;
+	background: #f0f0f0;
+	border-radius: 0.5em;
+}
+
+.user-info-left
+{
+	margin: 0;
+	padding: 0 1em 0 0;
+}
+
+.user-info-right
+{
+	margin: 0;
+	padding: 0 0 0 1em;
+}
+
+.user-info-left .user-socializing
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+
+.user-info-left .user-socializing i
+{
+	color: #ff82ab;
+	margin: 0.5em;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
