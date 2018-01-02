@@ -63,8 +63,9 @@ class indexControl extends \core\common\control
 		// dump($markDown);
 		// $my_html = \Michelf\MarkdownExtra::defaultTransform('* d');
 		// dump(markDown($test['content']));
-		$userModel = new \app\model\userModel();
-		$user = $userModel -> getUser(6, 3);
-		dump($user);
+		// $userModel = new \app\model\userModel();
+		// $user = $userModel -> getUser(6, 3);
+		// dump($user);
+		$this -> display('index/index');
 	}
 }
