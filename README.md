@@ -2,7 +2,21 @@
 
 [项目演示地址](http://bg.fsociety.cn) 
 
-*PS: 因为还没全做完，所以目前请访问如下地址 host/articel host/login host/music host/picture host/search host/upload host/user host/video*
+*PS: 因为还没全做完，所以目前请访问如下地址:*
+
+- [articel](http://www.fsociety.cn/articel) 
+
+- [picture](http://www.fsociety.cn/picture) 
+
+- [music](http://www.fsociety.cn/music) 
+
+- [video](http://www.fsociety.cn/video) 
+
+- [upload](http://www.fsociety.cn/upload) 
+
+- [user](http://www.fsociety.cn/user) 
+
+- [search](http://www.fsociety.cn/search) 
 
 **框架解释 ：**
 
@@ -102,7 +116,7 @@
 
 - **首页 ：**
 
-![fsociety1](http://oj6n9nf7i.bkt.clouddn.com/image/test/fsociety1.jpg)
+![fsociety16](http://oj6n9nf7i.bkt.clouddn.com/image/testfsociety16.jpg)
 
 - **登录/注册页面**
 
@@ -116,7 +130,7 @@
 
 - **图片列表页面**
 
-![fsociety5](http://oj6n9nf7i.bkt.clouddn.com/image/test/fsociety5.jpg)
+![fsociety17](http://oj6n9nf7i.bkt.clouddn.com/image/testfsociety17.jpg)
 
 - **音乐列表页面**
 
@@ -143,6 +157,6 @@
 
 - **用户详情页面**
 
-![fsociety14](http://oj6n9nf7i.bkt.clouddn.com/image/test/fsociety14.jpg)
+![fsociety15](http://oj6n9nf7i.bkt.clouddn.com/image/testfsociety15.jpg)
 
-*这个其实是很久以前写的了，当时写到评论模块的时候刚好那段时间比较忙，后来一直有各种事情，所以项目就拖着了。等到以后有时间在一点一点补上吧Orz，当然这次得把整体升级下，我最近在写一个高大上的框架，等到全部搞定了刚好可以用这个项目做实践：）*
+*这个其实是很久以前写的了，当时写到评论模块的时候刚好那段时间比较忙，后来一直有各种事情，所以项目就拖着了。等到以后有时间在一点一点补上吧Orz，当然这次得把整体升级下，我最近在写一个高大上的框架，等到全部搞定了刚好可以用这个项目做实践：）* 
