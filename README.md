@@ -1,6 +1,6 @@
 # 这是个类似于QQ空间的个人博客
 
-[项目演示地址](https://bg.fsociety.cn) 
+[项目演示地址](http://bg.fsociety.cn) 
 
 *PS: 因为还没全做完，所以目前请访问如下地址 host/articel host/login host/music host/picture host/search host/upload host/user host/video*
 
